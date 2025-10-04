@@ -1,0 +1,170 @@
+/* Styles personnalisés pour le rapport de stage */
+
+/* Import de polices si nécessaire */
+@import url('https://fonts.googleapis.com/css2?family=Times+New+Roman&display=swap');
+
+/* Styles de base */
+body {
+    line-height: 1.6;
+}
+
+/* Améliorations pour l'impression */
+@media print {
+    .print\:hidden {
+        display: none !important;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+    }
+    
+    h1, h2, h3 {
+        page-break-after: avoid;
+    }
+    
+    section {
+        page-break-inside: avoid;
+    }
+    
+    /* Masquer la navigation pour l'impression */
+    nav {
+        display: none !important;
+    }
+}
+
+/* Styles pour le défilement fluide */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Personnalisation de la barre de défilement */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1a472a;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2d5a3c;
+}
+
+/* Animation pour les sections */
+section {
+    transition: all 0.3s ease;
+}
+
+/* Styles pour les tableaux améliorés */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #e2e8f0;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f7fafc;
+    font-weight: 600;
+}
+
+/* Effets de survol pour les éléments interactifs */
+.hover-lift {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles pour les badges et étiquettes */
+.badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.375rem;
+}
+
+.badge-primary {
+    background-color: #1a472a;
+    color: white;
+}
+
+.badge-secondary {
+    background-color: #2d5a3c;
+    color: white;
+}
+
+/* Responsive design amélioré */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    h2 {
+        font-size: 1.25rem;
+    }
+    
+    table {
+        font-size: 0.875rem;
+    }
+}
+
+/* Styles pour les citations */
+blockquote {
+    border-left: 4px solid #1a472a;
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    color: #4a5568;
+}
+
+/* Styles pour les listes améliorées */
+ul.enhanced {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul.enhanced li {
+    padding-left: 1.5rem;
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+ul.enhanced li:before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #1a472a;
+    font-weight: bold;
+}
+
+/* Remove top borders from cards */
+.bg-blue-50,
+.bg-yellow-50,
+.bg-purple-50,
+.bg-red-50,
+.bg-green-50,
+.bg-gray-50 {
+    border-top: none !important;
+}

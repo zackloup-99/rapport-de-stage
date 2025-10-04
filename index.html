@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapport de Stage - [Nom de l'entreprise]</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Styles personnalisés -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- Configuration Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1a472a',
+                        secondary: '#2d5a3c',
+                        accent: '#4a7856'
+                    },
+                    fontFamily: {
+                        'serif-custom': ['Times New Roman', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-serif-custom bg-gray-50">
+    <!-- Container principal -->
+    <div class="max-w-4xl mx-auto bg-white shadow-lg min-h-screen">
+        
+        <!-- En-tête officiel -->
+        <header class="bg-white text-gray-800 py-8 px-6 text-center border-b-2 border-gray-200">
+            <div class="mb-4">
+                <h1 class="text-sm font-bold leading-tight text-blue-900">
+                    RÉPUBLIQUE ALGÉRIENNE DÉMOCRATIQUE ET POPULAIRE
+                </h1>
+                <h2 class="text-sm font-bold leading-tight text-blue-900">
+                    MINISTÈRE DE L'ENSEIGNEMENT SUPÉRIEUR ET DE LA RECHERCHE SCIENTIFIQUE
+                </h2>
+                <h3 class="text-sm font-bold leading-tight text-blue-900">
+                    ÉCOLE SUPÉRIEURE EN INFORMATIQUE DE SIDI BEL ABBÈS (ESI-SBA)
+                </h3>
+            </div>
+            
+            <!-- Logos -->
+            <div class="my-6 flex justify-center items-center space-x-16">
+                <img src="sources/logos/esi-sba.png" alt="Logo ESI-SBA" class="h-20 w-20">
+                <img src="sources/logos/example-logo.png" alt="Logo Entreprise" class="h-16 w-auto">
+            </div>
+            
+            <!-- Titre principal -->
+            <h1 class="text-2xl font-bold uppercase mt-4 border-t-2 border-blue-900 pt-4 text-blue-900">
+                Rapport de Stage
+            </h1>
+        </header>
+
+        <!-- Informations du stage -->
+        <section class="bg-gray-50 py-6 px-6 text-center border-b">
+            <div class="max-w-2xl mx-auto">
+                <p class="text-lg mb-2">
+                    Réalisé au sein de <strong class="text-blue-900">[Nom de l'entreprisee]</strong>
+                </p>
+                <p class="text-lg mb-2">
+                    Par : <strong class="text-blue-900">[Ton Nom Complet]</strong>
+                </p>
+                <p class="text-lg mb-2">
+                    Encadrant : <strong class="text-blue-900">[Nom de l'encadrant]</strong>
+                </p>
+                <p class="text-lg mb-2">
+                    Année universitaire : <strong class="text-blue-900">2024–2025</strong>
+                </p>
+                <p class="text-lg mb-2">
+                    Période de stage : <strong class="text-blue-900">[Date début – Date fin]</strong>
+                </p>
+                <p class="text-lg">
+                    Sujet : <strong class="text-blue-900">[Nom du projet]</strong>
+                </p>
+            </div>
+        </section>
+
+        <!-- Navigation rapide -->
+        <nav class="bg-blue-600 text-white py-3 px-6 hidden print:hidden">
+            <div class="flex flex-wrap justify-center gap-3 text-xs">
+                <a href="#remerciements" class="hover:text-gray-200 transition">Remerciements</a>
+                <a href="#introduction" class="hover:text-gray-200 transition">Introduction</a>
+                <a href="#entreprise" class="hover:text-gray-200 transition">Entreprise</a>
+                <a href="#projet" class="hover:text-gray-200 transition">Activités</a>
+                <a href="#architecture" class="hover:text-gray-200 transition">Architecture</a>
+                <a href="#technologies" class="hover:text-gray-200 transition">Technologies</a>
+                <a href="#developpement" class="hover:text-gray-200 transition">Développement</a>
+                <a href="#documentation" class="hover:text-gray-200 transition">Documentation</a>
+                <a href="#apprentissages" class="hover:text-gray-200 transition">Apprentissages</a>
+                <a href="#recommandations" class="hover:text-gray-200 transition">Recommandations</a>
+                <a href="#competences" class="hover:text-gray-200 transition">Compétences</a>
+                <a href="#conclusion" class="hover:text-gray-200 transition">Conclusion</a>
+            </div>
+        </nav>
+
+        <!-- Contenu principal -->
+        <main class="py-8 px-6">
+            
+            <!-- Table of Contents -->
+            <section class="mb-12">
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h2 class="text-xl font-bold text-blue-900 mb-6 text-center">Table des matières</h2>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="space-y-3">
+                            <div class="flex items-center">
+                                <span class="bg-blue-900 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 text-xs font-bold">1</span>
+                                <a href="#remerciements" class="text-blue-900 hover:text-blue-700 transition">Remerciements</a>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="bg-blue-900 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 text-xs font-bold">2</span>
+                                <a href="#introduction" class="text-blue-900 hover:text-blue-700 transition">Introduction</a>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="bg-blue-900 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 text-xs font-bold">3</span>
+                                <a href="#entreprise" class="text-blue-900 hover:text-blue-700 transition">Présentation de l'entreprise</a>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="bg-blue-900 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 text-xs font-bold">4</span>
+                                <a href="#projet" class="text-blue-900 hover:text-blue-700 transition">Activités et missions</a>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="bg-blue-900 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 text-xs font-bold">5</span>
+                                <a href="#methodologie" class="text-blue-900 hover:text-blue-700 transition">Méthodologie et collecte de données</a>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="bg-blue-900 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 text-xs font-bold">6</span>
+                                <a href="#architecture" class="text-blue-900 hover:text-blue-700 transition">Architecture technique</a>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="bg-blue-900 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 text-xs font-bold">7</span>
+                                <a href="#technologies" class="text-blue-900 hover:text-blue-700 transition">Technologies utilisées</a>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="bg-blue-900 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 text-xs font-bold">8</span>
+                                <a href="#developpement" class="text-blue-900 hover:text-blue-700 transition">Processus de développement</a>
+                            </div>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="flex items-center">
+                                <span class="bg-blue-900 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 text-xs font-bold">9</span>
+                                <a href="#documentation" class="text-blue-900 hover:text-blue-700 transition">Documentation et captures d'écran</a>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="bg-blue-900 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 text-xs font-bold">10</span>
+                                <a href="#apprentissages" class="text-blue-900 hover:text-blue-700 transition">Apprentissages et expérience</a>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="bg-blue-900 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 text-xs font-bold">11</span>
+                                <a href="#recommandations" class="text-blue-900 hover:text-blue-700 transition">Recommandations et améliorations</a>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="bg-blue-900 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 text-xs font-bold">12</span>
+                                <a href="#competences" class="text-blue-900 hover:text-blue-700 transition">Compétences acquises</a>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="bg-blue-900 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 text-xs font-bold">13</span>
+                                <a href="#conclusion" class="text-blue-900 hover:text-blue-700 transition">Conclusion</a>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="bg-blue-900 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 text-xs font-bold">14</span>
+                                <a href="#annexes" class="text-blue-900 hover:text-blue-700 transition">Annexes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Section Remerciements -->
+            <section id="remerciements" class="mb-12 scroll-mt-16">
+                <div class="flex items-center mb-6">
+                    <div class="bg-blue-900 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">
+                        <span class="text-sm font-bold">1</span>
+                    </div>
+                    <h2 class="text-xl font-bold text-blue-900 border-l-4 border-blue-900 pl-4">
+                        Remerciements
+                    </h2>
+                </div>
+                <div class="prose max-w-none">
+                    <p class="mb-4 text-justify">
+                        Je tiens à exprimer ma profonde gratitude à <strong>[Nom de l'entreprise]</strong> 
+                        pour m'avoir accueilli au sein de son équipe durant la période de mon stage.
+                    </p>
+                    <p class="mb-4 text-justify">
+                        Je remercie particulièrement <strong>Monsieur [Nom de votre superviseur]</strong> pour son encadrement, 
+                        ses conseils et son soutien tout au long de ce stage.
+                    </p>
+                    <p class="text-justify">
+                        Je remercie également mes enseignants à l'École Supérieure en Informatique de Sidi Bel Abbès 
+                        pour la qualité de la formation dispensée et pour avoir rendu possible cette expérience enrichissante.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Section Introduction -->
+            <section id="introduction" class="mb-12 scroll-mt-16">
+                <div class="flex items-center mb-6">
+                    <div class="bg-blue-900 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">
+                        <span class="text-sm font-bold">2</span>
+                    </div>
+                    <h2 class="text-xl font-bold text-blue-900 border-l-4 border-blue-900 pl-4">
+                        Introduction
+                    </h2>
+                </div>
+                <div class="prose max-w-none">
+                    <p class="mb-4 text-justify">
+                        Dans le cadre de ma formation à l'École Supérieure en Informatique de Sidi Bel Abbès, 
+                        j'ai eu l'opportunité d'effectuer un stage pratique au sein de [Nom de l'entreprise], 
+                        où j'ai été chargé de [description des missions confiées].
+                    </p>
+                    <p class="mb-4 text-justify">
+                        Ce stage avait pour objectif principal de mettre en application les connaissances 
+                        théoriques acquises durant mes études dans le domaine [domaine d'activité], en utilisant 
+                        les technologies et outils appropriés selon les besoins de l'entreprise.
+                    </p>
+                    <p class="mb-4 text-justify">
+                        [Description de l'objectif du projet ou des missions confiées] au sein de l'entreprise, 
+                        en [description des méthodes ou approches utilisées].
+                    </p>
+                    <p class="text-justify">
+                        Ce rapport présente le déroulement complet du stage, les activités réalisées, 
+                        les défis rencontrés, les solutions apportées, ainsi que les compétences 
+                        techniques et professionnelles que j'ai pu développer tout au long de cette expérience enrichissante.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Section Présentation de l'entreprise -->
+            <section id="entreprise" class="mb-12 scroll-mt-16">
+                <div class="flex items-center mb-6">
+                    <div class="bg-blue-900 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">
+                        <span class="text-sm font-bold">3</span>
+                    </div>
+                    <h2 class="text-xl font-bold text-blue-900 border-l-4 border-blue-900 pl-4">
+                        Présentation de l'entreprise
+                    </h2>
+                </div>
+                <div class="prose max-w-none">
+                    <div class="bg-gray-50 p-6 rounded-lg mb-6">
+                        <div class="flex justify-center mb-4">
+                            <img src="sources/logos/example-logo.png" alt="Logo Entreprise" class="h-16 w-auto">
+                        </div>
+                        <p class="text-center text-gray-600 italic">
+                            Logo officiel de [Nom de l'entreprise]
+                        </p>
+                    </div>
+                    
+                    <p class="mb-4 text-justify">
+                        <strong>[Nom de l'entreprise]</strong> est une entreprise [secteur d'activité] fondée en [année]. 
+                        Elle propose une gamme complète de services dans le domaine [domaine d'expertise], tels que :
+                    </p>
+                    <ul class="list-disc pl-6 mb-4 space-y-1">
+                        <li>[Service 1]</li>
+                        <li>[Service 2]</li>
+                        <li>[Service 3]</li>
+                    </ul>
+                    <p class="mb-4 text-justify">
+                        L'entreprise se distingue par son engagement envers la sécurité des données, 
+                        l'éthique professionnelle et la satisfaction de ses clients.
+                    </p>
+                    
+                    <h3 class="text-lg font-semibold text-blue-900 mt-6 mb-4">Organisation hiérarchique</h3>
+                    <p class="mb-4 text-justify">
+                        L'entreprise est structurée selon une hiérarchie classique :
+                    </p>
+                    <ul class="list-disc pl-6 mb-4 space-y-2">
+                        <li><strong>Direction générale</strong> – supervise toutes les activités de l'entreprise.</li>
+                        <li><strong>Départements principaux :</strong>
+                            <ul class="list-disc pl-6 mt-2 space-y-1">
+                                <li>[Département 1]</li>
+                                <li>[Département 2]</li>
+                                <li>[Département 3]</li>
+                                <li>[Département 4]</li>
+                            </ul>
+                        </li>
+                        <li><strong>Équipes opérationnelles :</strong> chaque département comprend des ingénieurs, 
+                            techniciens et assistants spécialisés.</li>
+                    </ul>
+                    <p class="text-justify">
+                        Durant mon stage, j'étais intégré au [nom du département], sous la supervision de 
+                        <strong>Monsieur [Nom du superviseur]</strong>.
+                    </p>
+                    
+                    <h3 class="text-lg font-semibold text-blue-900 mt-6 mb-4">Présentation du département informatique</h3>
+                    <p class="mb-4 text-justify">
+                        Le département informatique de [Nom de l'entreprise] joue un rôle central dans la digitalisation 
+                        et l'optimisation des processus métier. Cette équipe est responsable de la maintenance, 
+                        du développement et de l'évolution des systèmes d'information de l'entreprise.
+                    </p>
+                    <div class="grid md:grid-cols-2 gap-4 mb-4">
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-blue-800 mb-2">Missions principales</h4>
+                            <ul class="list-disc pl-5 space-y-1 text-blue-700 text-sm">
+                                <li>Maintenance et évolution des systèmes</li>
+                                <li>Développement d'applications métier</li>
+                                <li>Sécurisation des infrastructures</li>
+                                <li>Support technique aux utilisateurs</li>
+                            </ul>
+                        </div>
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-green-800 mb-2">Technologies utilisées</h4>
+                            <ul class="list-disc pl-5 space-y-1 text-green-700 text-sm">
+                                <li>Bases de données relationnelles</li>
+                                <li>Frameworks de développement web</li>
+                                <li>Outils de gestion de projet</li>
+                                <li>Environnements de déploiement</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section Activités et missions -->
+            <section id="projet" class="mb-12 scroll-mt-16">
+                <div class="flex items-center mb-6">
+                    <div class="bg-blue-900 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">
+                        <span class="text-sm font-bold">4</span>
+                    </div>
+                    <h2 class="text-xl font-bold text-blue-900 border-l-4 border-blue-900 pl-4">
+                        Activités et missions
+                    </h2>
+                </div>
+                <div class="prose max-w-none">
+                    <h3 class="text-lg font-semibold text-blue-900 mt-6 mb-4">Contexte et objectifs du stage</h3>
+                    <p class="mb-4 text-justify">
+                        Durant ce stage au sein de [Nom de l'entreprise], j'ai été intégré au [nom du département] 
+                        pour participer aux activités quotidiennes et découvrir le fonctionnement des systèmes informatiques. 
+                        Ce stage avait pour objectif de me permettre d'observer et de participer aux différentes tâches 
+                        du département informatique.
+                    </p>
+                    
+                    <h3 class="text-lg font-semibold text-blue-900 mt-6 mb-4">Objectifs du stage</h3>
+                    <div class="bg-gray-50 p-4 rounded-lg mb-6">
+                        <p class="mb-4 text-justify">
+                            Les objectifs principaux de ce stage étaient de :
+                        </p>
+                        <ul class="list-disc pl-6 space-y-2 text-gray-700">
+                            <li>Mettre en pratique les connaissances théoriques acquises durant la formation académique</li>
+                            <li>Découvrir l'environnement professionnel et les méthodes de travail en entreprise</li>
+                            <li>Développer des compétences techniques et professionnelles dans un contexte réel</li>
+                            <li>Comprendre les enjeux et défis du secteur d'activité de l'entreprise</li>
+                            <li>Participer aux activités quotidiennes du département informatique</li>
+                            <li>Contribuer aux projets et missions confiées par l'équipe</li>
+                        </ul>
+                    </div>
+                    
+                    <h3 class="text-lg font-semibold text-blue-900 mt-6 mb-4">Types d'activités réalisées</h3>
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-blue-800 mb-2">Activités d'observation et d'apprentissage</h4>
+                            <ul class="list-disc pl-5 space-y-1 text-blue-700 text-sm">
+                                <li>Observation du fonctionnement des systèmes informatiques</li>
+                                <li>Suivi des procédures de maintenance et de sécurité</li>
+                                <li>Participation aux réunions d'équipe et de projet</li>
+                                <li>Découverte des outils et technologies utilisés</li>
+                                <li>Analyse des processus métier et des workflows</li>
+                                <li>Étude de la documentation technique existante</li>
+                            </ul>
+                        </div>
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-green-800 mb-2">Activités pratiques et opérationnelles</h4>
+                            <ul class="list-disc pl-5 space-y-1 text-green-700 text-sm">
+                                <li>Configuration et maintenance de systèmes</li>
+                                <li>Tests et validation de fonctionnalités</li>
+                                <li>Support technique aux utilisateurs</li>
+                                <li>Rédaction de documentation technique</li>
+                                <li>Participation au développement d'applications</li>
+                                <li>Gestion de bases de données et sauvegardes</li>
+                    </ul>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-lg font-semibold text-blue-900 mt-6 mb-4">Déroulement du stage et missions réalisées</h3>
+                    <p class="mb-4 text-justify">
+                        Au cours de ce stage, mes principales missions ont été :
+                    </p>
+                    
+                    <div class="space-y-6 mb-6">
+                        <div class="bg-blue-50 p-4 rounded-lg ">
+                            <h4 class="font-semibold text-blue-800 mb-2">1️⃣ Observation et apprentissage</h4>
+                            <ul class="list-disc pl-5 space-y-1 text-blue-700 text-sm">
+                                <li>Observation du fonctionnement quotidien du département informatique</li>
+                                <li>Découverte des différents systèmes et outils utilisés</li>
+                                <li>Compréhension des procédures et processus internes</li>
+                                <li>Participation aux réunions d'équipe et formations</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-green-50 p-4 rounded-lg ">
+                            <h4 class="font-semibold text-green-800 mb-2">2️⃣ Support et assistance</h4>
+                            <ul class="list-disc pl-5 space-y-1 text-green-700 text-sm">
+                                <li>Assistance dans la résolution de problèmes techniques simples</li>
+                                <li>Support aux utilisateurs pour l'utilisation des systèmes</li>
+                                <li>Participation aux tâches de maintenance préventive</li>
+                                <li>Documentation des procédures et des solutions</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-yellow-50 p-4 rounded-lg ">
+                            <h4 class="font-semibold text-yellow-800 mb-2">3️⃣ Configuration et tests</h4>
+                            <ul class="list-disc pl-5 space-y-1 text-yellow-700 text-sm">
+                                <li>Configuration de postes de travail et logiciels</li>
+                                <li>Tests de nouvelles fonctionnalités ou mises à jour</li>
+                                <li>Validation des configurations réseau et sécurité</li>
+                                <li>Participation aux tests de récupération et sauvegarde</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-purple-50 p-4 rounded-lg ">
+                            <h4 class="font-semibold text-purple-800 mb-2">4️⃣ Développement et amélioration (optionnel)</h4>
+                            <ul class="list-disc pl-5 space-y-1 text-purple-700 text-sm">
+                                <li>[Si applicable] Participation à des projets de développement</li>
+                                <li>[Si applicable] Implémentation de nouvelles fonctionnalités</li>
+                                <li>[Si applicable] Amélioration d'applications existantes</li>
+                                <li>[Si applicable] Tests et validation de développements</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-red-50 p-4 rounded-lg ">
+                            <h4 class="font-semibold text-red-800 mb-2">5️⃣ Formation et encadrement</h4>
+                            <ul class="list-disc pl-5 space-y-1 text-red-700 text-sm">
+                                <li>Travail sous la supervision de [Nom du superviseur]</li>
+                                <li>Participation aux réunions régulières et formations</li>
+                                <li>Application des méthodologies de travail de l'entreprise</li>
+                                <li>Documentation des apprentissages et des tâches réalisées</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section Méthodologie et collecte de données -->
+            <section id="methodologie" class="mb-12 scroll-mt-16">
+                <div class="flex items-center mb-6">
+                    <div class="bg-blue-900 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">
+                        <span class="text-sm font-bold">5</span>
+                    </div>
+                    <h2 class="text-xl font-bold text-blue-900 pl-4">
+                        Méthodologie et collecte de données
+                    </h2>
+                </div>
+                <div class="prose max-w-none">
+                    <h3 class="text-lg font-semibold text-blue-900 mt-6 mb-4">Approche méthodologique</h3>
+                    <p class="mb-4 text-justify">
+                        Pour mener à bien ce stage et documenter mon expérience, j'ai adopté une approche méthodologique 
+                        structurée qui m'a permis de collecter des informations pertinentes et de tirer des conclusions 
+                        constructives sur mon expérience professionnelle.
+                    </p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-blue-800 mb-2">Méthodes d'observation</h4>
+                            <ul class="list-disc pl-5 space-y-1 text-blue-700 text-sm">
+                                <li>Observation participante des activités quotidiennes</li>
+                                <li>Analyse des processus et procédures existantes</li>
+                                <li>Étude des outils et technologies utilisés</li>
+                                <li>Suivi des réunions d'équipe et de projet</li>
+                                <li>Observation des interactions professionnelles</li>
+                            </ul>
+                        </div>
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-green-800 mb-2">Méthodes de collecte de données</h4>
+                            <ul class="list-disc pl-5 space-y-1 text-green-700 text-sm">
+                                <li>Tenue d'un journal de stage quotidien</li>
+                                <li>Documentation des tâches et projets réalisés</li>
+                                <li>Collecte de retours et feedback des superviseurs</li>
+                                <li>Analyse de la documentation technique existante</li>
+                                <li>Entretiens informels avec les membres de l'équipe</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-lg font-semibold text-blue-900 mt-6 mb-4">Outils de documentation</h3>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <p class="mb-3 text-justify">
+                            Pour assurer une documentation complète et organisée de mon expérience, j'ai utilisé 
+                            plusieurs outils et méthodes :
+                        </p>
+                        <ul class="list-disc pl-6 space-y-1 text-gray-700">
+                            <li><strong>Journal de stage :</strong> Tenue quotidienne pour noter les activités, observations et apprentissages</li>
+                            <li><strong>Documentation technique :</strong> Collecte et analyse des manuels, guides et procédures</li>
+                            <li><strong>Captures d'écran :</strong> Documentation visuelle des interfaces et processus (si applicable)</li>
+                            <li><strong>Notes de réunion :</strong> Comptes-rendus des réunions d'équipe et de projet</li>
+                            <li><strong>Portfolio de compétences :</strong> Suivi des compétences acquises et développées</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section Architecture technique -->
+            <section id="architecture" class="mb-12 scroll-mt-16">
+                <div class="flex items-center mb-6">
+                    <div class="bg-blue-900 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">
+                        <span class="text-sm font-bold">5</span>
+                    </div>
+                    <h2 class="text-xl font-bold text-blue-900 border-l-4 border-blue-900 pl-4">
+                        Architecture technique
+                    </h2>
+                </div>
+                <div class="prose max-w-none">
+                    <h3 class="text-lg font-semibold text-blue-900 mt-6 mb-4">Architecture globale</h3>
+                    <p class="mb-4 text-justify">
+                        L'application suit une architecture microservices moderne avec une séparation claire 
+                        entre le frontend et le backend. Cette approche garantit la scalabilité, la maintenabilité 
+                        et la sécurité de l'application.
+                    </p>
+                    
+                    <!-- Placeholder pour diagramme d'architecture -->
+                    <div class="bg-gray-100 border-2 border-dashed border-gray-300 p-8 rounded-lg mb-6 text-center">
+                        <div class="text-gray-500">
+                            <svg class="mx-auto h-16 w-16 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                            </svg>
+                            <p class="text-lg font-medium mb-2">Diagramme d'architecture</p>
+                            <p class="text-sm">Schéma de l'architecture [type d'architecture] avec [technologies utilisées]</p>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-lg font-semibold text-blue-900 mt-6 mb-4">Composants principaux</h3>
+                    <div class="grid md:grid-cols-3 gap-4 mb-6">
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-blue-800 mb-2">[Composant 1]</h4>
+                            <ul class="list-disc pl-5 space-y-1 text-blue-700 text-sm">
+                                <li>[Fonctionnalité 1]</li>
+                                <li>[Fonctionnalité 2]</li>
+                                <li>[Fonctionnalité 3]</li>
+                                <li>[Fonctionnalité 4]</li>
+                            </ul>
+                        </div>
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-green-800 mb-2">[Composant 2]</h4>
+                            <ul class="list-disc pl-5 space-y-1 text-green-700 text-sm">
+                                <li>[Fonctionnalité 1]</li>
+                                <li>[Fonctionnalité 2]</li>
+                                <li>[Fonctionnalité 3]</li>
+                                <li>[Fonctionnalité 4]</li>
+                            </ul>
+                        </div>
+                        <div class="bg-purple-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-purple-800 mb-2">[Composant 3]</h4>
+                            <ul class="list-disc pl-5 space-y-1 text-purple-700 text-sm">
+                                <li>[Fonctionnalité 1]</li>
+                                <li>[Fonctionnalité 2]</li>
+                                <li>[Fonctionnalité 3]</li>
+                                <li>[Fonctionnalité 4]</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Diagramme ER -->
+                    <div class="bg-gray-50 p-6 rounded-lg mb-6">
+                        <h4 class="font-semibold text-gray-800 mb-4">Modèle de données - Diagramme Entité-Relation</h4>
+                        <div class="flex justify-center">
+                            <div class="w-full max-w-2xl h-64 bg-gray-100 border-2 border-dashed border-gray-300 rounded flex items-center justify-center">
+                                <span class="text-gray-500 text-lg">[Diagramme ER à insérer]</span>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-600 text-center mt-3">
+                            Schéma de la base de données [Type de base] pour l'application [Nom de l'application]
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section Technologies utilisées -->
+            <section id="technologies" class="mb-12 scroll-mt-16">
+                <div class="flex items-center mb-6">
+                    <div class="bg-blue-900 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">
+                        <span class="text-sm font-bold">6</span>
+                    </div>
+                    <h2 class="text-xl font-bold text-blue-900 border-l-4 border-blue-900 pl-4">
+                        Technologies utilisées
+                    </h2>
+                </div>
+                
+                <div class="overflow-x-auto">
+                    <table class="min-w-full border-collapse border border-gray-300">
+                        <thead>
+                            <tr class="bg-gray-100">
+                                <th class="border border-gray-300 px-4 py-3 text-left font-semibold text-primary">Catégorie</th>
+                                <th class="border border-gray-300 px-4 py-3 text-left font-semibold text-primary">Technologies</th>
+                                <th class="border border-gray-300 px-4 py-3 text-left font-semibold text-primary">Usage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="hover:bg-gray-50">
+                                <td class="border border-gray-300 px-4 py-3 font-medium">Langages et frameworks</td>
+                                <td class="border border-gray-300 px-4 py-3">[Langages et frameworks utilisés]</td>
+                                <td class="border border-gray-300 px-4 py-3">[Description de l'utilisation]</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="border border-gray-300 px-4 py-3 font-medium">Bases de données</td>
+                                <td class="border border-gray-300 px-4 py-3">[Bases de données utilisées]</td>
+                                <td class="border border-gray-300 px-4 py-3">[Description de l'utilisation]</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="border border-gray-300 px-4 py-3 font-medium">Outils de gestion</td>
+                                <td class="border border-gray-300 px-4 py-3">[Outils de gestion utilisés]</td>
+                                <td class="border border-gray-300 px-4 py-3">[Description de l'utilisation]</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="border border-gray-300 px-4 py-3 font-medium">Outils bureautiques</td>
+                                <td class="border border-gray-300 px-4 py-3">[Outils bureautiques utilisés]</td>
+                                <td class="border border-gray-300 px-4 py-3">[Description de l'utilisation]</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="border border-gray-300 px-4 py-3 font-medium">Systèmes d'exploitation</td>
+                                <td class="border border-gray-300 px-4 py-3">[Systèmes d'exploitation utilisés]</td>
+                                <td class="border border-gray-300 px-4 py-3">[Description de l'utilisation]</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="border border-gray-300 px-4 py-3 font-medium">DevOps et déploiement</td>
+                                <td class="border border-gray-300 px-4 py-3">[Outils DevOps utilisés]</td>
+                                <td class="border border-gray-300 px-4 py-3">[Description de l'utilisation]</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Section Développement -->
+            <section id="developpement" class="mb-12 scroll-mt-16">
+                <div class="flex items-center mb-6">
+                    <div class="bg-blue-900 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">
+                        <span class="text-sm font-bold">7</span>
+                    </div>
+                    <h2 class="text-xl font-bold text-blue-900 border-l-4 border-blue-900 pl-4">
+                        Processus de développement
+                    </h2>
+                </div>
+                <div class="prose max-w-none">
+                    <h3 class="text-lg font-semibold text-blue-900 mt-6 mb-4">Méthodologie de développement</h3>
+                    <p class="mb-4 text-justify">
+                        Le développement a suivi une approche agile avec des sprints de deux semaines. 
+                        Chaque sprint incluait la planification, le développement, les tests et la revue 
+                        des fonctionnalités implémentées.
+                    </p>
+                    
+                    <h3 class="text-lg font-semibold text-blue-900 mt-6 mb-4">Défis techniques rencontrés</h3>
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div class="bg-yellow-50 p-4 rounded-lg ">
+                            <h4 class="font-semibold text-yellow-800 mb-2">Intégration des systèmes</h4>
+                            <p class="text-yellow-700 text-sm">
+                                [Description du défi d'intégration rencontré], 
+                                gestion des états et optimisation des performances.
+                            </p>
+                        </div>
+                        <div class="bg-red-50 p-4 rounded-lg ">
+                            <h4 class="font-semibold text-red-800 mb-2">Sécurité des données</h4>
+                            <p class="text-red-700 text-sm">
+                                [Description des défis de sécurité rencontrés], chiffrement des données 
+                                sensibles et protection contre les attaques.
+                            </p>
+                        </div>
+                        <div class="bg-blue-50 p-4 rounded-lg ">
+                            <h4 class="font-semibold text-blue-800 mb-2">Optimisation de la base de données</h4>
+                            <p class="text-blue-700 text-sm">
+                                [Description des défis de base de données], indexation des requêtes 
+                                fréquentes et gestion des relations complexes.
+                            </p>
+                        </div>
+                        <div class="bg-blue-50 p-4 rounded-lg ">
+                            <h4 class="font-semibold text-blue-800 mb-2">Déploiement et conteneurisation</h4>
+                            <p class="text-blue-700 text-sm">
+                                Configuration Docker pour l'environnement de production, 
+                                orchestration des services et gestion des variables d'environnement.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-lg font-semibold text-blue-900 mt-6 mb-4">Solutions implémentées</h3>
+                    <ul class="list-disc pl-6 mb-6 space-y-2">
+                        <li class="text-justify">[Solution 1 implémentée]</li>
+                        <li class="text-justify">[Solution 2 implémentée]</li>
+                        <li class="text-justify">[Solution 3 implémentée]</li>
+                        <li class="text-justify">[Solution 4 implémentée]</li>
+                        <li class="text-justify">[Solution 5 implémentée]</li>
+                    </ul>
+                    
+                    <!-- Aperçu des fonctionnalités développées -->
+                    <div class="bg-gray-50 p-6 rounded-lg mb-6">
+                        <h4 class="font-semibold text-gray-800 mb-4">Aperçu des fonctionnalités développées</h4>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                            <div class="text-center">
+                                <div class="w-full h-24 bg-gray-100 border border-dashed border-gray-300 rounded flex items-center justify-center">
+                                    <span class="text-gray-500 text-xs">[Capture]</span>
+                                </div>
+                                <p class="text-xs mt-1">Gestion avancée</p>
+                            </div>
+                            <div class="text-center">
+                                <div class="w-full h-24 bg-gray-100 border border-dashed border-gray-300 rounded flex items-center justify-center">
+                                    <span class="text-gray-500 text-xs">[Capture]</span>
+                                </div>
+                                <p class="text-xs mt-1">Rapports</p>
+                            </div>
+                            <div class="text-center">
+                                <div class="w-full h-24 bg-gray-100 border border-dashed border-gray-300 rounded flex items-center justify-center">
+                                    <span class="text-gray-500 text-xs">[Capture]</span>
+                                </div>
+                                <p class="text-xs mt-1">Interface mobile</p>
+                            </div>
+                            <div class="text-center">
+                                <div class="w-full h-24 bg-gray-100 border border-dashed border-gray-300 rounded flex items-center justify-center">
+                                    <span class="text-gray-500 text-xs">[Capture]</span>
+                                </div>
+                                <p class="text-xs mt-1">Notifications</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section Documentation et captures d'écran -->
+            <section id="documentation" class="mb-12 scroll-mt-16">
+                <div class="flex items-center mb-6">
+                    <div class="bg-blue-900 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">
+                        <span class="text-sm font-bold">8</span>
+                    </div>
+                    <h2 class="text-xl font-bold text-blue-900 border-l-4 border-blue-900 pl-4">
+                        Documentation et captures d'écran
+                    </h2>
+                </div>
+                <div class="prose max-w-none">
+                    <h3 class="text-lg font-semibold text-blue-900 mt-6 mb-4">Documentation technique</h3>
+                    <p class="mb-4 text-justify">
+                        Une documentation complète a été réalisée pour accompagner le projet, incluant 
+                        les guides d'installation, la documentation de l'API, et les manuels utilisateur.
+                    </p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h4 class="font-semibold text-gray-800 mb-3">Documentation disponible</h4>
+                            <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                                <li>Guide d'installation et configuration</li>
+                                <li>Documentation de l'API REST</li>
+                                <li>Guide de déploiement Docker</li>
+                                <li>Manuel utilisateur</li>
+                                <li>Documentation technique complète</li>
+                            </ul>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h4 class="font-semibold text-gray-800 mb-3">Captures d'écran</h4>
+                            <p class="text-gray-700 text-sm mb-3">
+                                Les captures d'écran suivantes montrent les différentes interfaces de l'application :
+                            </p>
+                            <div class="grid grid-cols-2 gap-2">
+                                <div class="bg-gray-200 h-20 rounded flex items-center justify-center text-xs text-gray-500">
+                                    Interface principale
+                                </div>
+                                <div class="bg-gray-200 h-20 rounded flex items-center justify-center text-xs text-gray-500">
+                                    Gestion des salles
+                                </div>
+                                <div class="bg-gray-200 h-20 rounded flex items-center justify-center text-xs text-gray-500">
+                                    Planification visites
+                                </div>
+                                <div class="bg-gray-200 h-20 rounded flex items-center justify-center text-xs text-gray-500">
+                                    Tableau de bord
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Placeholder pour captures d'écran -->
+                    <div class="bg-gray-50 p-6 rounded-lg mb-6">
+                        <h4 class="font-semibold text-gray-800 mb-4">Captures d'écran de l'application [Nom de l'application]</h4>
+                        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                            <div class="bg-white p-2 rounded border border-dashed border-gray-300">
+                                <div class="w-full h-32 bg-gray-100 rounded flex items-center justify-center">
+                                    <span class="text-gray-500 text-sm">[Capture 1]</span>
+                                </div>
+                                <p class="text-xs text-center mt-1">Interface principale</p>
+                            </div>
+                            <div class="bg-white p-2 rounded border border-dashed border-gray-300">
+                                <div class="w-full h-32 bg-gray-100 rounded flex items-center justify-center">
+                                    <span class="text-gray-500 text-sm">[Capture 2]</span>
+                                </div>
+                                <p class="text-xs text-center mt-1">Gestion des salles</p>
+                            </div>
+                            <div class="bg-white p-2 rounded border border-dashed border-gray-300">
+                                <div class="w-full h-32 bg-gray-100 rounded flex items-center justify-center">
+                                    <span class="text-gray-500 text-sm">[Capture 3]</span>
+                                </div>
+                                <p class="text-xs text-center mt-1">Planification</p>
+                            </div>
+                            <div class="bg-white p-2 rounded border border-dashed border-gray-300">
+                                <div class="w-full h-32 bg-gray-100 rounded flex items-center justify-center">
+                                    <span class="text-gray-500 text-sm">[Capture 4]</span>
+                                </div>
+                                <p class="text-xs text-center mt-1">Tableau de bord</p>
+                            </div>
+                            <div class="bg-white p-2 rounded border border-dashed border-gray-300">
+                                <div class="w-full h-32 bg-gray-100 rounded flex items-center justify-center">
+                                    <span class="text-gray-500 text-sm">[Capture 5]</span>
+                                </div>
+                                <p class="text-xs text-center mt-1">Authentification</p>
+                            </div>
+                            <div class="bg-white p-2 rounded border border-dashed border-gray-300">
+                                <div class="w-full h-32 bg-gray-100 rounded flex items-center justify-center">
+                                    <span class="text-gray-500 text-sm">[Capture 6]</span>
+                                </div>
+                                <p class="text-xs text-center mt-1">Réservations</p>
+                            </div>
+                            <div class="bg-white p-2 rounded border border-dashed border-gray-300">
+                                <div class="w-full h-32 bg-gray-100 rounded flex items-center justify-center">
+                                    <span class="text-gray-500 text-sm">[Capture 7]</span>
+                                </div>
+                                <p class="text-xs text-center mt-1">Configuration</p>
+                            </div>
+                            <div class="bg-white p-2 rounded border border-dashed border-gray-300">
+                                <div class="w-full h-32 bg-gray-100 rounded flex items-center justify-center">
+                                    <span class="text-gray-500 text-sm">[Capture 8]</span>
+                                </div>
+                                <p class="text-xs text-center mt-1">Statistiques</p>
+                            </div>
+                        </div>
+                        <div class="mt-4 text-center">
+                            <p class="text-sm text-gray-600">
+                                <strong>[X captures d'écran]</strong> à ajouter selon votre projet
+                            </p>
+                            <div class="mt-3 grid grid-cols-3 gap-2">
+                                <div class="text-center">
+                                    <div class="w-full h-16 bg-gray-100 rounded border border-dashed border-gray-300 flex items-center justify-center">
+                                        <span class="text-gray-500 text-xs">[Capture]</span>
+                                    </div>
+                                    <p class="text-xs">Capture supplémentaire</p>
+                                </div>
+                                <div class="text-center">
+                                    <div class="w-full h-16 bg-gray-100 rounded border border-dashed border-gray-300 flex items-center justify-center">
+                                        <span class="text-gray-500 text-xs">[Capture]</span>
+                                    </div>
+                                    <p class="text-xs">Capture supplémentaire</p>
+                                </div>
+                                <div class="text-center">
+                                    <div class="w-full h-16 bg-gray-100 rounded border border-dashed border-gray-300 flex items-center justify-center">
+                                        <span class="text-gray-500 text-xs">[Capture]</span>
+                                    </div>
+                                    <p class="text-xs">Capture supplémentaire</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-lg font-semibold text-blue-900 mt-6 mb-4">Fichiers de documentation</h3>
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <p class="text-blue-800 font-medium mb-2">Documents à inclure selon votre projet :</p>
+                        <ul class="list-disc pl-5 space-y-1 text-blue-700 text-sm">
+                            <li><strong>[Nom_Documentation_API].pdf</strong> - Documentation de l'API (si applicable)</li>
+                            <li><strong>[Nom_Documentation_Generale].pdf</strong> - Documentation générale du projet</li>
+                            <li><strong>[Nom_Guide_Deploiement].pdf</strong> - Guide de déploiement (si applicable)</li>
+                            <li><strong>[Nom_Documentation_Technique].pdf</strong> - Documentation technique détaillée</li>
+                            <li><strong>[Nom_Guide_Utilisateur].pdf</strong> - Manuel utilisateur (si applicable)</li>
+                        </ul>
+                        <div class="mt-3 p-3 bg-blue-100 rounded">
+                            <p class="text-blue-800 text-xs">
+                                📁 <strong>Localisation :</strong> [Dossier de vos documents]/
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section Apprentissages et expérience -->
+            <section id="apprentissages" class="mb-12 scroll-mt-16">
+                <div class="flex items-center mb-6">
+                    <div class="bg-blue-900 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">
+                        <span class="text-sm font-bold">9</span>
+                    </div>
+                    <h2 class="text-xl font-bold text-blue-900 border-l-4 border-blue-900 pl-4">
+                        Apprentissages et expérience
+                    </h2>
+                </div>
+                <div class="prose max-w-none">
+                    <h3 class="text-lg font-semibold text-blue-900 mt-6 mb-4">Ce que j'ai appris</h3>
+                    <p class="mb-4 text-justify">
+                        Ce stage m'a permis d'acquérir de nombreuses connaissances pratiques et théoriques dans le domaine 
+                        de l'informatique. J'ai pu mettre en application les concepts appris durant mes études dans un 
+                        environnement professionnel réel.
+                    </p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-blue-800 mb-2">Connaissances techniques</h4>
+                            <ul class="list-disc pl-5 space-y-1 text-blue-700 text-sm">
+                                <li>Maîtrise des outils de développement</li>
+                                <li>Compréhension des architectures logicielles</li>
+                                <li>Gestion des bases de données</li>
+                                <li>Méthodologies de développement</li>
+                                <li>Outils de versioning et collaboration</li>
+                            </ul>
+                        </div>
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-green-800 mb-2">Compétences professionnelles</h4>
+                            <ul class="list-disc pl-5 space-y-1 text-green-700 text-sm">
+                                <li>Travail en équipe et communication</li>
+                                <li>Gestion du temps et des priorités</li>
+                                <li>Résolution de problèmes complexes</li>
+                                <li>Adaptation aux exigences métier</li>
+                                <li>Documentation et reporting</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-lg font-semibold text-blue-900 mt-6 mb-4">Défis rencontrés et solutions</h3>
+                    <p class="mb-4 text-justify">
+                        Durant ce stage, j'ai été confronté à plusieurs défis techniques et organisationnels qui ont 
+                        contribué à mon apprentissage et à mon développement professionnel. Ces défis m'ont permis 
+                        de développer mes compétences en résolution de problèmes et en adaptation.
+                    </p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div class="bg-yellow-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-yellow-800 mb-2">Défi technique</h4>
+                            <p class="text-yellow-700 text-sm mb-2">
+                                <strong>Problème :</strong> [Description du défi technique rencontré]
+                            </p>
+                            <p class="text-yellow-700 text-sm mb-2">
+                                <strong>Impact :</strong> [Conséquences du problème]
+                            </p>
+                            <p class="text-yellow-700 text-sm">
+                                <strong>Solution :</strong> [Approche adoptée et résultats obtenus]
+                            </p>
+                        </div>
+                        <div class="bg-red-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-red-800 mb-2">Défi organisationnel</h4>
+                            <p class="text-red-700 text-sm mb-2">
+                                <strong>Problème :</strong> [Description du défi organisationnel]
+                            </p>
+                            <p class="text-red-700 text-sm mb-2">
+                                <strong>Impact :</strong> [Conséquences du problème]
+                            </p>
+                            <p class="text-red-700 text-sm">
+                                <strong>Solution :</strong> [Stratégie mise en place et résultats]
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-lg font-semibold text-blue-900 mt-6 mb-4">Réflexions personnelles</h3>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <p class="mb-3 text-justify">
+                            Cette expérience de stage m'a permis de :
+                        </p>
+                        <ul class="list-disc pl-6 space-y-1 text-gray-700">
+                            <li>Comprendre la différence entre l'apprentissage théorique et la pratique professionnelle</li>
+                            <li>Développer une meilleure compréhension des enjeux métier et des contraintes réelles</li>
+                            <li>Améliorer mes compétences en communication et en travail d'équipe</li>
+                            <li>Prendre conscience de l'importance de la documentation et de la traçabilité</li>
+                            <li>Acquérir une vision plus globale des projets informatiques et de leur cycle de vie</li>
+                            <li>Développer mon autonomie et ma capacité d'adaptation</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section Recommandations et améliorations -->
+            <section id="recommandations" class="mb-12 scroll-mt-16">
+                <div class="flex items-center mb-6">
+                    <div class="bg-blue-900 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">
+                        <span class="text-sm font-bold">10</span>
+                    </div>
+                    <h2 class="text-xl font-bold text-blue-900 border-l-4 border-blue-900 pl-4">
+                        Recommandations et améliorations
+                    </h2>
+                </div>
+                <div class="prose max-w-none">
+                    <h3 class="text-lg font-semibold text-blue-900 mt-6 mb-4">Améliorations suggérées pour le département IT</h3>
+                    <p class="mb-4 text-justify">
+                        Basé sur mon expérience durant ce stage, j'ai identifié plusieurs axes d'amélioration 
+                        qui pourraient bénéficier au département informatique et à l'organisation globale.
+                    </p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div class="bg-yellow-50 p-4 rounded-lg ">
+                            <h4 class="font-semibold text-yellow-800 mb-2">Amélioration technique</h4>
+                            <p class="text-yellow-700 text-sm mb-2">
+                                <strong>Problème identifié :</strong> [Description du problème technique]
+                            </p>
+                            <p class="text-yellow-700 text-sm">
+                                <strong>Recommandation :</strong> [Solution proposée avec justification]
+                            </p>
+                        </div>
+                        <div class="bg-red-50 p-4 rounded-lg ">
+                            <h4 class="font-semibold text-red-800 mb-2">Amélioration organisationnelle</h4>
+                            <p class="text-red-700 text-sm mb-2">
+                                <strong>Problème identifié :</strong> [Description du problème organisationnel]
+                            </p>
+                            <p class="text-red-700 text-sm">
+                                <strong>Recommandation :</strong> [Solution proposée avec justification]
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-lg font-semibold text-blue-900 mt-6 mb-4">Perspectives d'évolution</h3>
+                    <p class="mb-4 text-justify">
+                        Mon stage m'a permis d'entrevoir les perspectives d'évolution du département informatique 
+                        et les opportunités de développement pour l'entreprise dans le domaine numérique.
+                    </p>
+                    <ul class="list-disc pl-6 mb-4 space-y-2">
+                        <li class="text-justify">Modernisation des infrastructures existantes</li>
+                        <li class="text-justify">Mise en place de nouvelles technologies</li>
+                        <li class="text-justify">Formation continue des équipes</li>
+                        <li class="text-justify">Amélioration des processus de développement</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Section Compétences acquises -->
+            <section id="competences" class="mb-12 scroll-mt-16">
+                <div class="flex items-center mb-6">
+                    <div class="bg-blue-900 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">
+                        <span class="text-sm font-bold">11</span>
+                    </div>
+                    <h2 class="text-xl font-bold text-blue-900 border-l-4 border-blue-900 pl-4">
+                        Compétences acquises
+                    </h2>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-blue-50 p-6 rounded-lg ">
+                        <h3 class="font-semibold text-lg text-blue-800 mb-3">Compétences Techniques</h3>
+                        <ul class="list-disc pl-5 space-y-2 text-blue-700">
+                            <li>[Compétence technique 1 acquise]</li>
+                            <li>[Compétence technique 2 acquise]</li>
+                            <li>[Compétence technique 3 acquise]</li>
+                            <li>[Compétence technique 4 acquise]</li>
+                            <li>[Compétence technique 5 acquise]</li>
+                            <li>[Compétence technique 6 acquise]</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-blue-50 p-6 rounded-lg ">
+                        <h3 class="font-semibold text-lg text-blue-800 mb-3">Compétences Professionnelles</h3>
+                        <ul class="list-disc pl-5 space-y-2 text-blue-700">
+                            <li>Gestion de projet avec méthodologie Scrum</li>
+                            <li>Travail en équipe et communication professionnelle</li>
+                            <li>Conception, test et déploiement de solutions informatiques</li>
+                            <li>Sens de l'organisation et rigueur dans la gestion des tâches et des délais</li>
+                            <li>Résolution de problèmes techniques complexes</li>
+                            <li>Adaptation aux exigences d'un environnement bancaire professionnel</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="mt-6 bg-gray-50 p-6 rounded-lg">
+                    <h3 class="font-semibold text-lg text-gray-800 mb-3">Compétences transversales développées</h3>
+                    <div class="grid md:grid-cols-3 gap-4">
+                        <div class="text-center">
+                            <div class="bg-blue-900 text-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-2">
+                                <span class="text-lg font-bold">A</span>
+                            </div>
+                            <p class="text-sm font-medium text-gray-700">Analyse</p>
+                            <p class="text-xs text-gray-500">Analyse des besoins et conception de solutions</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="bg-blue-900 text-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-2">
+                                <span class="text-lg font-bold">D</span>
+                            </div>
+                            <p class="text-sm font-medium text-gray-700">Développement</p>
+                            <p class="text-xs text-gray-500">Programmation et implémentation</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="bg-blue-900 text-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-2">
+                                <span class="text-lg font-bold">T</span>
+                            </div>
+                            <p class="text-sm font-medium text-gray-700">Test</p>
+                            <p class="text-xs text-gray-500">Tests et validation des fonctionnalités</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section Conclusion -->
+            <section id="conclusion" class="mb-12 scroll-mt-16">
+                <div class="flex items-center mb-6">
+                    <div class="bg-blue-900 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">
+                        <span class="text-sm font-bold">12</span>
+                    </div>
+                    <h2 class="text-xl font-bold text-blue-900 border-l-4 border-blue-900 pl-4">
+                        Conclusion
+                    </h2>
+                </div>
+                <div class="prose max-w-none">
+                    <p class="mb-4 text-justify">
+                        Ce stage m'a permis de mettre en pratique mes connaissances théoriques et d'acquérir une expérience 
+                        précieuse dans le domaine de l'informatique appliquée au secteur bancaire.
+                    </p>
+                    <p class="mb-4 text-justify">
+                        J'ai pu comprendre le fonctionnement interne d'une banque, participer à des projets concrets et 
+                        améliorer mes compétences techniques et professionnelles dans le développement full-stack.
+                    </p>
+                    <p class="mb-4 text-justify">
+                        Cette expérience m'a permis de maîtriser des technologies modernes et de développer des compétences 
+                        transversales essentielles : gestion de projet avec Scrum, travail en équipe, et adaptation aux 
+                        contraintes d'un environnement bancaire professionnel.
+                    </p>
+                    
+                    <h3 class="text-lg font-semibold text-blue-900 mt-6 mb-4">Bilan du projet</h3>
+                    <div class="bg-gray-50 p-6 rounded-lg mb-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-3">Objectifs atteints</h4>
+                                <ul class="list-disc pl-5 space-y-1 text-gray-700 text-sm">
+                                    <li>Application full-stack fonctionnelle</li>
+                                    <li>Interface utilisateur intuitive</li>
+                                    <li>API sécurisée et performante</li>
+                                    <li>Base de données optimisée</li>
+                                    <li>Déploiement automatisé</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-3">Livrables réalisés</h4>
+                                <ul class="list-disc pl-5 space-y-1 text-gray-700 text-sm">
+                                    <li>Code source complet</li>
+                                    <li>Documentation technique</li>
+                                    <li>Manuels utilisateur</li>
+                                    <li>Guides de déploiement</li>
+                                    <li>Captures d'écran</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="mb-4 text-justify">
+                        Je remercie encore [Nom de l'entreprise] et mon encadrant <strong>Monsieur [Nom du superviseur]</strong> 
+                        pour leur accompagnement et la confiance accordée.
+                    </p>
+                    <p class="mb-4 text-justify">
+                        Cette expérience constitue une étape importante dans mon parcours académique et professionnel et m'a 
+                        motivé à poursuivre dans le domaine du développement informatique et de la gestion de projets.
+                    </p>
+                    <p class="text-justify">
+                        Je ressors de cette expérience avec une vision claire de mon orientation professionnelle 
+                        et une motivation renforcée pour continuer à développer mes compétences dans le développement 
+                        web moderne et l'innovation technologique.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Section Annexes -->
+            <section id="annexes" class="mb-12 scroll-mt-16">
+                <div class="flex items-center mb-6">
+                    <div class="bg-blue-900 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">
+                        <span class="text-sm font-bold">13</span>
+                    </div>
+                    <h2 class="text-xl font-bold text-blue-900 border-l-4 border-blue-900 pl-4">
+                        Annexes
+                    </h2>
+                </div>
+                
+                <div class="prose max-w-none">
+                    <h3 class="text-lg font-semibold text-blue-900 mt-6 mb-4">Documentation technique</h3>
+                    <div class="bg-gray-50 p-6 rounded-lg mb-6">
+                        <h4 class="font-semibold text-gray-800 mb-3">Fichiers sources disponibles :</h4>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                            <li><strong>Documentation PDF :</strong> 
+                                <ul class="list-disc pl-5 mt-2 space-y-1 text-sm">
+                                    <li>[Nom_Documentation_API].pdf (si applicable)</li>
+                                    <li>[Nom_Documentation_Generale].pdf</li>
+                                    <li>[Nom_Guide_Deploiement].pdf (si applicable)</li>
+                                    <li>[Nom_Documentation_Technique].pdf</li>
+                                    <li>[Nom_Guide_Utilisateur].pdf (si applicable)</li>
+                                </ul>
+                            </li>
+                            <li><strong>Captures d'écran :</strong> [X] captures d'écran dans [dossier_screenshots]/</li>
+                            <li><strong>Diagrammes :</strong> [Diagramme ER] ([nom_fichier].png/jpg)</li>
+                            <li><strong>Code source :</strong> [Description du code] avec documentation inline (si applicable)</li>
+                        </ul>
+                    </div>
+                    
+                    <h3 class="text-lg font-semibold text-blue-900 mt-6 mb-4">Annexes complémentaires</h3>
+                <div class="bg-gray-50 p-6 rounded-lg">
+                        <h4 class="font-semibold text-gray-800 mb-3">Documents annexes disponibles :</h4>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                            <li><strong>Organigramme de l'entreprise</strong> - Structure hiérarchique de [Nom de l'entreprise]</li>
+                            <li><strong>Captures d'écran des fonctionnalités développées</strong> - Interface utilisateur et workflow</li>
+                            <li><strong>Documentation technique</strong> - Schémas de conception et architecture</li>
+                            <li><strong>Diagrammes de conception</strong> - Modèles de données et flux d'information</li>
+                            <li><strong>Manuel d'utilisation</strong> - Guide utilisateur pour l'application développée</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mt-6">
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-blue-800 mb-2">Environnement de développement</h4>
+                            <ul class="list-disc pl-5 space-y-1 text-blue-700 text-sm">
+                                <li>[Éditeur de code utilisé] avec [extensions/configurations]</li>
+                                <li>[Outil 1 utilisé] pour [description de l'utilisation]</li>
+                                <li>[Outil 2 utilisé] pour [description de l'utilisation]</li>
+                                <li>[Outil 3 utilisé] pour [description de l'utilisation]</li>
+                                <li>[Outil 4 utilisé] pour [description de l'utilisation]</li>
+                                <li>[Outil 5 utilisé] pour [description de l'utilisation]</li>
+                            </ul>
+                        </div>
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-blue-800 mb-2">Métriques du projet</h4>
+                            <ul class="list-disc pl-5 space-y-1 text-blue-700 text-sm">
+                                <li>Durée totale : [X] semaines</li>
+                                <li>Lignes de code : [X] lignes</li>
+                                <li>Fichiers créés : [X] fichiers</li>
+                                <li>Commits Git : [X] commits</li>
+                                <li>Sprints Scrum : [X] sprints</li>
+                                <li>Fonctionnalités développées : [X] fonctionnalités</li>
+                    </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Section Signature -->
+            <section class="mb-12">
+                <div class="bg-gray-50 p-8 rounded-lg">
+                    <div class="text-center">
+                        <p class="text-lg mb-4">Fait à Sidi Bel Abbès, le <span id="current-date"></span></p>
+                        <div class="mt-8">
+                            <p class="text-lg font-semibold">[Ton Nom Complet]</p>
+                            <p class="text-sm text-gray-600">Étudiant en Informatique - École Supérieure en Informatique de Sidi Bel Abbès (ESI-SBA)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Pied de page -->
+        <footer class="bg-blue-600 text-white py-6 px-6 text-center text-sm">
+            <p>Rapport de Stage - ESI SBA - Année Universitaire 2024-2025</p>
+            <p class="mt-2">Document généré le <span id="current-date"></span></p>
+        </footer>
+    </div>
+
+    <!-- Scripts JavaScript -->
+    <script>
+        // Date actuelle
+        document.getElementById('current-date').textContent = new Date().toLocaleDateString('fr-FR');
+        
+        // Smooth scroll pour la navigation
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
